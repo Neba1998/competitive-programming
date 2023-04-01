@@ -2,8 +2,8 @@ class Solution:
     def maxSumTwoNoOverlap(self, nums: List[int], firstLen: int, secondLen: int) -> int:
 #         [0,6,5,2,2,5,1,9,4]
 
-        prefix = [0]
-        ans = 0
+        prefix = [1]
+        ans = 1
     
         for i in nums:
             prefix.append(prefix[-1] + i)
